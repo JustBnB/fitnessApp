@@ -7,6 +7,9 @@ import { useNavigation } from "@react-navigation/native";
 export default function Start() {
     const navigation = useNavigation();
 
+    const onLogin = () => {
+        navigation.navigate("Login");
+    }
 
     const onRegister = () => {
         navigation.navigate("Register");
@@ -22,7 +25,7 @@ export default function Start() {
                 <Text h4 style={{textAlign: 'center'}}>Rejestruj swoje wyniki i przeglądaj trasy!</Text>
                 <View style={{gap: 32}}>
                     <Button onPress={onRegister} type="outline" buttonStyle={{width: 200, borderWidth: 2}} size="lg">Rejestracja</Button>
-                    
+                    <Button onPress={onLogin} type="outline" buttonStyle={{width: 200, borderWidth: 2}} size="lg">Logowanie</Button>
                 </View>
                 <StatusBar style="auto" />
             </View>
