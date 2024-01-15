@@ -11,6 +11,19 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "resolutions": {
+      "@expo/config-plugins": "~4.1.0",
+      "@expo/prebuild-config": "~4.0.0",
+      "expo-modules-autolinking": "0.9.0"
+      },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
+    ],
     "assetBundlePatterns": [
       "**/*"
     ],
