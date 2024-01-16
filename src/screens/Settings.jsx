@@ -83,3 +83,4 @@ export default function Settings({navigation}){
     </View>
     )
 }
+
