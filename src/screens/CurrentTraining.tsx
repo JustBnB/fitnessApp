@@ -102,10 +102,6 @@ export default function CurrentTraining({ navigation, route }) {
         }
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
     const calculateSpeed = (points) => {
         return parseFloat((points?.reduce((sum, point) => sum + (point.speed || 0), 0) / (points.length || 1))?.toFixed(2)) || 0;
     }
@@ -214,3 +210,4 @@ const styles = StyleSheet.create({
         borderColor: '#1976D2'
     }
 });
+
